@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="center">
+        <!-- Sidebar -->
+        <div class="left">
+            <div class="company">
+                <h2>Web Tracker</h2>
+            </div>
+            <ul class="navigation">
+                <li>Dashboard</li>
+                <li>Settings</li>
+                <li>Profile</li>
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="right">
+            <h1 class="title">User Dashboard</h1>
+
+            <div class="row">
+                <div class="graph">
+                    <h3>Most Visited Websites</h3>
+                    <canvas id="visitsChart"></canvas>
+                </div>
+                <div class="graph">
+                    <h3>Tips Given</h3>
+                    <canvas id="tipsChart"></canvas>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="graph">
+                    <h3>Quiz Performance</h3>
+                    <canvas id="quizChart"></canvas>
+                </div>
+                <div class="graph">
+                    <h3>Score Streak</h3>
+                    <canvas id="scoreStreakChart"></canvas>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="faq-section">
+                <h2>Helpful Tips</h2>
+                <div class="faq">
+                    <div class="faq-question">How can I improve my online privacy?</div>
+                    <div class="faq-answer">Use a VPN, disable third-party cookies, and clear your browsing history regularly.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">What are some safe browsing habits?</div>
+                    <div class="faq-answer">Avoid clicking unknown links, use strong passwords, and enable two-factor authentication.</div>
+                </div>
+                <div class="faq">
+                    <div class="faq-question">How do I block trackers?</div>
+                    <div class="faq-answer">Use browser extensions that block tracking scripts and enable Do Not Track settings.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="dashboard.js" defer></script>
+
+</body>
+</html>
+
